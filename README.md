@@ -142,12 +142,13 @@ qecf = QECFFramework(
 )
 ```
 # Create blockchain network
-
+```
 qecf.initialize_network(
     nodes=100,
     validators=15
 )
-
+```
+```
 # Start simulation
 
 results = qecf.run_simulation()
@@ -176,7 +177,7 @@ qecf.verify_transaction(signed_tx)
 ```
 
 ---
-```Python
+```
 ## Quantum-Secure Communication
 
 python
@@ -186,12 +187,13 @@ qecf.establish_qkd_channel(
 )
 
 session_key = qecf.generate_quantum_key()
-
+```
 
 ---
 
 ## Quantum Consensus Execution
 
+```
 python
 leader = qecf.select_leader(
     method="QRNG"
