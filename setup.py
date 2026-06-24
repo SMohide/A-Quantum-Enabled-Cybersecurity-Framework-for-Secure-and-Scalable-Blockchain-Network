@@ -1,4 +1,3 @@
-```python
 """
 QECF Framework Setup
 
@@ -122,4 +121,3 @@ setup(
             "https://github.com/your-username/qecf-framework/wiki"
     },
 )
-```
