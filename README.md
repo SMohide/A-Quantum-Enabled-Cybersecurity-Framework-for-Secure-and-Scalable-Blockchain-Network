@@ -95,37 +95,41 @@ The simulation includes:
 
 # Installation
 
-```bash
-# Clone repository
-git clone https://github.com/your-username/qecf-framework.git
+bash
+# Clone the repository
+git clone https://github.com/SMohide/A-Quantum-Enabled-Cybersecurity-Framework-for-Secure-and-Scalable-Blockchain-Network.git
 
-cd qecf-framework
+# Navigate to project directory
+cd A-Quantum-Enabled-Cybersecurity-Framework-for-Secure-and-Scalable-Blockchain-Network
 
 # Create virtual environment
 python -m venv venv
 
-source venv/bin/activate
+# Activate virtual environment
 
 # Windows
 venv\Scripts\activate
 
+# Linux / macOS
+source venv/bin/activate
+
 # Install dependencies
 pip install -r requirements.txt
-```
+
 
 # Download Simulation Dependencies
 
-```bash
+bash
 python scripts/setup_environment.py
-```
 
----
+
+
 
 # Usage
 
 ## Basic Usage
 
-```python
+
 from qecf import QECFFramework
 
 # Initialize framework
@@ -150,13 +154,13 @@ results = qecf.run_simulation()
 
 print(results["security_score"])
 print(results["qri"])
-```
+
 
 ---
 
 ## Secure Transaction Authentication
 
-```python
+python
 transaction = qecf.create_transaction(
     sender="Hospital_A",
     receiver="Hospital_B",
@@ -169,38 +173,38 @@ signed_tx = qecf.sign_transaction(
 )
 
 qecf.verify_transaction(signed_tx)
-```
+
 
 ---
 
 ## Quantum-Secure Communication
 
-```python
+python
 qecf.establish_qkd_channel(
     node_a="Node1",
     node_b="Node2"
 )
 
 session_key = qecf.generate_quantum_key()
-```
+
 
 ---
 
 ## Quantum Consensus Execution
 
-```python
+python
 leader = qecf.select_leader(
     method="QRNG"
 )
 
 qecf.execute_consensus_round()
-```
+
 
 ---
 
 # Project Structure
 
-```text
+text
 qecf-framework/
 │
 ├── data/
@@ -294,7 +298,7 @@ qecf-framework/
 ├── setup.py
 ├── LICENSE
 └── README.md
-```
+
 
 ---
 
@@ -332,7 +336,7 @@ Calculates system-wide Quantum Resilience Index (QRI).
 
 Run the complete evaluation suite:
 
-```bash
+bash
 # Main experiments
 
 python experiments/run_experiments.py
@@ -352,7 +356,7 @@ python experiments/consensus_analysis.py
 # Quantum threat assessment
 
 python experiments/quantum_threat_evaluation.py
-```
+
 
 ---
 
@@ -413,13 +417,12 @@ Future extensions include:
 
 # Citation
 
-```bibtex
+bibtex
 @inproceedings{mohide2026qecf,
   title={A Quantum-Enabled Cybersecurity Framework for Secure and Scalable Blockchain Network},
   author={Mohide, Shravani and Mohide, Ishaan and Bandagale, Akshata and More, Nilkamal and Patil, Suchitra and Akhare, Roshan},
   year={2026}
 }
-```
 
 ---
 
