@@ -1,26 +1,3 @@
-// Online C compiler to run C program online
-#include <stdio.h>
-
-int main() {
-    // Write C code here```python
-"""
-threat_generator.py
-
-Quantum-Enabled Cybersecurity Framework (QECF)
-
-This module implements the Quantum Threat Assessment Model
-described in the QECF framework.
-
-The module generates, classifies, scores, and evaluates
-quantum-enabled cyber threats against blockchain networks.
-
-Author: Shravani Mohide
-
-Research Paper:
-A Quantum-Enabled Cybersecurity Framework for Secure and
-Scalable Blockchain Networks
-"""
-
 import random
 import logging
 import statistics
