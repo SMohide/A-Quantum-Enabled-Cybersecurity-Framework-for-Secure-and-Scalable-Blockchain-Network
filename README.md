@@ -456,14 +456,17 @@ Future extensions include:
 
 ---
 
-# Citation
-
-bibtex
-@inproceedings{mohide2026qecf,
-  author={[Authors]},
-  journal={[Journal]},
-  year={2026}
+```bibtex
+@inproceedings{qecf2026,
+  title={A Quantum-Enabled Cybersecurity Framework for Secure and Scalable Blockchain Networks},
+  author={Authors},
+  booktitle={Proceedings of the International Conference on Computing, Engineering and Technology (ICCET 2026)},
+  year={2026},
+  address={India},
+  note={Accepted for Presentation}
 }
+```
+
 
 ---
 
