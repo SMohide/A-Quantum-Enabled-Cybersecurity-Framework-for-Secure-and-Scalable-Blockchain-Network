@@ -460,8 +460,8 @@ Future extensions include:
 
 bibtex
 @inproceedings{mohide2026qecf,
-  title={A Quantum-Enabled Cybersecurity Framework for Secure and Scalable Blockchain Network},
-  author={Mohide, Shravani and Mohide, Ishaan and Bandagale, Akshata and More, Nilkamal and Patil, Suchitra and Akhare, Roshan},
+  author={[Authors]},
+  journal={[Journal]},
   year={2026}
 }
 
