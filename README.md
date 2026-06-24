@@ -95,7 +95,7 @@ The simulation includes:
 
 # Installation
 
-bash
+```bash
 # Clone the repository
 git clone https://github.com/SMohide/A-Quantum-Enabled-Cybersecurity-Framework-for-Secure-and-Scalable-Blockchain-Network.git
 
@@ -122,14 +122,14 @@ pip install -r requirements.txt
 bash
 python scripts/setup_environment.py
 
-
+```
 
 
 # Usage
 
 ## Basic Usage
 
-
+```
 from qecf import QECFFramework
 
 # Initialize framework
@@ -140,7 +140,7 @@ qecf = QECFFramework(
     enable_qrng=True,
     adaptive_security=True
 )
-
+```
 # Create blockchain network
 
 qecf.initialize_network(
@@ -154,10 +154,10 @@ results = qecf.run_simulation()
 
 print(results["security_score"])
 print(results["qri"])
-
+```
 
 ---
-
+```
 ## Secure Transaction Authentication
 
 python
@@ -173,10 +173,10 @@ signed_tx = qecf.sign_transaction(
 )
 
 qecf.verify_transaction(signed_tx)
-
+```
 
 ---
-
+```Python
 ## Quantum-Secure Communication
 
 python
@@ -198,7 +198,7 @@ leader = qecf.select_leader(
 )
 
 qecf.execute_consensus_round()
-
+```
 
 ---
 
