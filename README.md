@@ -204,100 +204,141 @@ qecf.execute_consensus_round()
 
 # Project Structure
 
-text
-qecf-framework/
+```text
+A-Quantum-Enabled-Cybersecurity-Framework-for-Secure-and-Scalable-Blockchain-Network/
+│
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── setup.py
+├── config.py
 │
 ├── data/
-│   ├── simulated/
-│   │   ├── network_data/
-│   │   ├── transaction_logs/
-│   │   └── attack_scenarios/
+│   ├── network_data.csv
+│   ├── validator_data.csv
+│   ├── transaction_logs.csv
+│   ├── threat_scenarios.csv
+│   └── qri_results.csv
 │
-├── src/
+├── simulation/
 │   ├── __init__.py
-│   ├── config.py
-│   ├── simulation_engine.py
-│   ├── network_manager.py
-│   │
-│   ├── threat_assessment/
-│   │   ├── __init__.py
-│   │   ├── threat_detector.py
-│   │   ├── risk_analyzer.py
-│   │   └── threat_classifier.py
-│   │
-│   ├── authentication/
-│   │   ├── __init__.py
-│   │   ├── dilithium.py
-│   │   ├── falcon.py
-│   │   ├── sphincs.py
-│   │   └── transaction_validator.py
-│   │
-│   ├── communication/
-│   │   ├── __init__.py
-│   │   ├── qkd_manager.py
-│   │   ├── key_distribution.py
-│   │   └── secure_channel.py
-│   │
-│   ├── consensus/
-│   │   ├── __init__.py
-│   │   ├── qrng_engine.py
-│   │   ├── validator_selection.py
-│   │   ├── leader_election.py
-│   │   └── consensus_manager.py
-│   │
-│   ├── adaptation/
-│   │   ├── __init__.py
-│   │   ├── security_orchestrator.py
-│   │   ├── runtime_monitor.py
-│   │   └── consensus_reconfiguration.py
-│   │
-│   ├── metrics/
-│   │   ├── __init__.py
-│   │   ├── qri.py
-│   │   ├── scalability_metrics.py
-│   │   ├── security_metrics.py
-│   │   └── performance_metrics.py
-│   │
-│   ├── algorithms/
-│   │   ├── __init__.py
-│   │   ├── qtam.py
-│   │   ├── qkd_protocol.py
-│   │   ├── pqc_authentication.py
-│   │   ├── qrng_consensus.py
-│   │   ├── adaptive_reconfiguration.py
-│   │   └── qri_evaluation.py
-│   │
-│   └── utils/
-│       ├── helpers.py
-│       └── visualization.py
+│   ├── network_generator.py
+│   ├── validator_generator.py
+│   ├── transaction_generator.py
+│   ├── threat_generator.py
+│   └── simulation_manager.py
+│
+├── threat_assessment/
+│   ├── __init__.py
+│   ├── threat_detector.py
+│   ├── risk_analyzer.py
+│   ├── security_state.py
+│   └── threat_classifier.py
+│
+├── authentication/
+│   ├── __init__.py
+│   ├── dilithium.py
+│   ├── falcon.py
+│   ├── sphincs.py
+│   ├── signature_manager.py
+│   └── transaction_auth.py
+│
+├── communication/
+│   ├── __init__.py
+│   ├── qkd_manager.py
+│   ├── key_distribution.py
+│   ├── secure_channel.py
+│   ├── quantum_channel.py
+│   └── communication_metrics.py
+│
+├── consensus/
+│   ├── __init__.py
+│   ├── qrng_engine.py
+│   ├── validator_selection.py
+│   ├── leader_election.py
+│   ├── consensus_manager.py
+│   └── block_finalization.py
+│
+├── adaptation/
+│   ├── __init__.py
+│   ├── runtime_monitor.py
+│   ├── policy_engine.py
+│   ├── adaptive_consensus.py
+│   ├── reconfiguration_engine.py
+│   └── security_orchestrator.py
+│
+├── algorithms/
+│   ├── __init__.py
+│   ├── qtam.py
+│   ├── qkd_protocol.py
+│   ├── pqc_authentication.py
+│   ├── qrng_consensus.py
+│   ├── adaptive_reconfiguration.py
+│   └── qri_evaluation.py
+│
+├── metrics/
+│   ├── __init__.py
+│   ├── qri.py
+│   ├── security_metrics.py
+│   ├── latency_metrics.py
+│   ├── scalability_metrics.py
+│   ├── performance_metrics.py
+│   └── entropy_metrics.py
 │
 ├── experiments/
-│   ├── run_experiments.py
-│   ├── security_analysis.py
-│   ├── scalability_study.py
-│   ├── consensus_analysis.py
-│   └── quantum_threat_evaluation.py
+│   ├── experiment_1_security_coverage.py
+│   ├── experiment_2_qkd_latency.py
+│   ├── experiment_3_pqc_validation.py
+│   ├── experiment_4_consensus_entropy.py
+│   ├── experiment_5_scalability.py
+│   ├── experiment_6_qri_evaluation.py
+│   └── run_experiments.py
+│
+├── visualization/
+│   ├── plot_qri.py
+│   ├── plot_qkd_latency.py
+│   ├── plot_consensus_entropy.py
+│   └── plot_scalability.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── helpers.py
+│   ├── visualization.py
+│   └── logger.py
 │
 ├── models/
 │   ├── pqc_models/
-│   └── threat_profiles/
+│   ├── threat_profiles/
+│   └── validator_profiles/
 │
 ├── results/
 │   ├── tables/
 │   ├── figures/
-│   └── reports/
+│   ├── reports/
+│   └── logs/
 │
 ├── notebooks/
+│   ├── 01_network_simulation.ipynb
+│   ├── 02_qkd_analysis.ipynb
+│   ├── 03_pqc_benchmark.ipynb
+│   ├── 04_consensus_evaluation.ipynb
+│   └── 05_qri_analysis.ipynb
 │
 ├── tests/
+│   ├── test_network.py
+│   ├── test_validators.py
+│   ├── test_transactions.py
+│   ├── test_threats.py
+│   ├── test_consensus.py
+│   ├── test_qkd.py
+│   └── test_qri.py
 │
-├── scripts/
-│   └── setup_environment.py
-│
-├── requirements.txt
-├── setup.py
-├── LICENSE
-└── README.md
+└── scripts/
+    ├── setup_environment.py
+    ├── generate_simulation_data.py
+    └── generate_attack_scenarios.py
+```
+
 
 
 ---
